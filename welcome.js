@@ -65,6 +65,10 @@ client.on('guildMemberAdd',async member => {
 });
 });
 });
+var dat = JSON.parse("{475631915110498324}");
+function forEachObject(obj, func) {
+    Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
+}
 client.on("ready", () => {
     var guild;
     while (!guild)
