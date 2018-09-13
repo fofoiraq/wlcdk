@@ -5,7 +5,6 @@ const client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 	client.user.setStatus("dnd");
-client.user.setActivity({game: {name: "DarkKing", type: Watching}});
 });
 
 client.on('guildMemberAdd',async member => {
