@@ -65,7 +65,7 @@ client.on('guildMemberAdd',async member => {
 });
 });
 });
-var dat = JSON.parse("{1}");
+var dat = JSON.parse(fs.readFileSync('./invite.json', 'utf8'));
 function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
 }
