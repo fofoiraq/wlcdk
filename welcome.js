@@ -59,7 +59,7 @@ client.on('guildMemberAdd',async member => {
           ctx.clip();
           ctx.drawImage(ava, 36, 21, 260, 260);
  			
-		  const c = client.channels.get("489433496415109121");
+		  const c = client.channels.get("490201472689111050");
           c.sendFile(canvas.toBuffer());
  
 });
@@ -72,7 +72,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.get("475631915110498324")
+        guild = client.guilds.get("490151165338583041")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -92,7 +92,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.get("475631915110498324")
+        guild = client.guilds.get("490151165338583041")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
