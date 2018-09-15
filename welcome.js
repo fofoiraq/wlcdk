@@ -81,7 +81,7 @@ client.on("ready", () => {
     })
 })
 client.on("guildMemberAdd", (member) => {
-    let channel = member.guild.channels.find('name', '🤗welcome🤗');
+    let channel = member.guild.channels.get('490201472689111050'));
     if (!channel) {
         console.log("!channel fails");
         return;
